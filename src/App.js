@@ -6,7 +6,7 @@ import {UppercaseLetters, LowercaseLetters, Symbols, Numbers} from './Components
 function App() {
 
   const [password, setPassword] = useState('Password');
-  const [alert, setAlert] = useState('alert');
+  const [alert, setAlert] = useState('Press Generate Button');
   const [strength, setStrength] = useState(16);
   const [up, setUp] = useState(false);
   const [low, setLow] = useState(true);
@@ -56,16 +56,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+
       <div className="container">
         <div className="generator">
-            <h1 className='generator_header'>Password Generator</h1>
+            <h1 className='generator-head'>Password Generator</h1>
 
             {/* password generator and icon */}
             <div className="generator-password">
               <h3>{password}</h3>
               <button onClick={copy}>
-                yes
+                copy
               </button>
             </div>
 
@@ -78,25 +78,25 @@ function App() {
             {/* uppercase */}
             <div className="form-group">
               <label htmlFor="">Include Uppercase Letters</label>
-              <input type="checkbox" name="" id="" checked={up} onChange={(e) => setUp(e.target.checked)} />
+              <input type="checkbox" name="" id="checkbox" checked={up} onChange={(e) => setUp(e.target.checked)} />
             </div>
 
             {/* lowercase */}
             <div className="form-group">
               <label htmlFor="">Include Lowercase Letters</label>
-              <input type="checkbox" name="" id="" checked={low} onChange={(e) => setLow(e.target.checked)} />
+              <input type="checkbox" name="" id="checkbox" checked={low} onChange={(e) => setLow(e.target.checked)} />
             </div>
 
             {/* symbols */}
             <div className="form-group">
               <label htmlFor="">Include Symbols</label>
-              <input type="checkbox" name="" id="" checked={sym} onChange={(e) => setSym(e.target.checked)} />
+              <input type="checkbox" name="" id="checkbox" checked={sym} onChange={(e) => setSym(e.target.checked)} />
             </div>
 
             {/* numbers */}
             <div className="form-group">
               <label htmlFor="">Include Numbers</label>
-              <input type="checkbox" name="" id="" checked={numb} onChange={(e) => setNumb(e.target.checked)} />
+              <input type="checkbox" name="" id="checkbox" checked={numb} onChange={(e) => setNumb(e.target.checked)} />
             </div>
 
             {/* Generate button */}
@@ -110,7 +110,6 @@ function App() {
             <p>{alert}</p>
         </div>
       </div>
-    </div>
   );
 }
 
