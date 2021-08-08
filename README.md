@@ -4,7 +4,7 @@
 -------------------------------------------------------------------
 ### You can generate secure passwords with this.
 ----------------------------------------------------------------------
-### This project is [live](https://pwgene.netlify.app/)
+### This project is [live.](https://pwgene.netlify.app/)
 ### This allows you to have Uppercase, Lowercase, Symbols, Numbers in your password. You can even choose the strength of your password.
 
 ![](./ss.png)
