@@ -58,7 +58,7 @@ function App() {
 
       <div className="container">
         <div className="generator">
-            <h1 className='generator-head'>Password Generator</h1>
+            <h1 className='generator-head'>Password <b className='gen'>Generator</b> </h1>
 
             {/* password generator and icon */}
             <div className="generator-password">
